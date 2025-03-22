@@ -1,6 +1,6 @@
 
 # Configuração do Ambiente
-Aqui vai ficar fixados os links dos programas e Softwares que serão necessários para execução e manutenção do Projeto Integrador TEEX-PI
+Aqui vai ficar fixados os links dos Programas, Softwares e Drivers que serão necessários para execução e manutenção do Projeto Integrador TEEX-PI
 
 
 ## 1. Java SE Development Kit 21.0.6 (JDK)
@@ -26,4 +26,4 @@ Aqui vai ficar fixados os links dos programas e Softwares que serão necessário
 
 ## 5. Apache Tomcat Server
 
-[Apacher Tomcat (9.0.102)](https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.exe)
+[Apacher Tomcat (9.0.102)]([https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.exe](https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.zip))
