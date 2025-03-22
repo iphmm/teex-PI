@@ -1,6 +1,6 @@
 
 # Configuração do Ambiente
-Aqui vai ficar fixados os links dos programas e Softwares que serão necessários para execução e manutenção do Projeto Integrador TEEX-PI
+Aqui vai ficar fixados os links dos Programas, Softwares e Drivers que serão necessários para execução e manutenção do Projeto Integrador TEEX-PI
 
 
 ## 1. Java SE Development Kit 21.0.6 (JDK)
