@@ -1,12 +1,24 @@
 package br.com.SistemaEstoque.aplicacao;
+/** import Teste Fornecedor
+import br.com.SistemaEstoque.dao.FornecedorDAO;
+import br.com.SistemaEstoque.model.Fornecedor;
+*/
+
+
+/** import do Teste Usuario
+    import br.com.SistemaEstoque.dao.UsuarioDAO;
+    import br.com.SistemaEstoque.model.Usuario;
+*/
 
 /** import do Teste produto
- * import br.com.SistemaEstoque.dao.ProdutoDAO;
+    import br.com.SistemaEstoque.dao.ProdutoDAO;
     import br.com.SistemaEstoque.model.Produto;
-* */
-import br.com.SistemaEstoque.dao.CategoriaDAO;
-import br.com.SistemaEstoque.model.Categoria;
+*/
 
+/** import do teste Categoria
+    import br.com.SistemaEstoque.dao.CategoriaDAO;
+    import br.com.SistemaEstoque.model.Categoria;
+*/
 
 
 /**
@@ -29,8 +41,9 @@ public class Main {
         produto.setIdFornecedor(1);
         
         produtoDAO.save(produto);
-        * */
+        */
         
+        /** teste categoria (Aprovado)
         CategoriaDAO categoriaDAO = new CategoriaDAO();
         Categoria categoria = new Categoria();
         
@@ -38,8 +51,31 @@ public class Main {
         categoria.setDescricao("Teste descrição");
         
         categoriaDAO.save(categoria);
+        */
         
+        /** Teste Usuario (Aprovado)
+        UsuarioDAO  userDAO = new UsuarioDAO();
+        Usuario usuario = new Usuario();
         
+        usuario.setNome("Paulo Henrique");
+        usuario.setEmail("paulo.teste@gmail.com");
+        usuario.setSenhaHash("NuncaVaodescobrir123");
+        usuario.setPerfil("Admin");
+        usuario.setStatusUsuario(true);
         
-    }
+        userDAO.save(usuario);
+        */
+        
+        /** Testes Fornecedor (Aprovado)
+        FornecedorDAO fornecedorDAO = new FornecedorDAO();
+        Fornecedor fornecedor = new Fornecedor();
+        
+        fornecedor.setNome("Apple");
+        fornecedor.setCnpj("123456789101234451");
+        fornecedor.setTelefone("11985630348");
+        fornecedor.setEmail("paulo.testes@gmail.com");
+        
+        fornecedorDAO.save(fornecedor);
+        */
+     }
 }

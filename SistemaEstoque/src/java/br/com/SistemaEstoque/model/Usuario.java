@@ -16,6 +16,10 @@ public class Usuario {
     private Timestamp dataCadastro;
     
     //Construitor
+    public Usuario(){
+        
+    }
+    
     public Usuario(int idUsuario, String nome, String email, String senhaHash,
                     String perfil, Boolean statusUsuario, Timestamp datacadastro){
         this.idUsuario = idUsuario;

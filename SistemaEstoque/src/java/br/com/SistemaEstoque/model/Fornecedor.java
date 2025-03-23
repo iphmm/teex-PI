@@ -1,6 +1,6 @@
 package br.com.SistemaEstoque.model;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 /**
  *
@@ -15,6 +15,10 @@ public class Fornecedor {
     private Timestamp dataCadastro;
     
     //Construtor da Classe Fornecedor
+    public Fornecedor(){
+        
+    }
+    
     public Fornecedor(int idForncedor, String nome, String cnpj, String telefone,
                       String email, Timestamp dataCadstro){
         this.idFornecedor = idFornecedor;
@@ -22,7 +26,7 @@ public class Fornecedor {
         this.cnpj = cnpj;
         this.telefone = telefone;
         this.email = email;
-        this.dataCadastro = dataCadstro;
+        this.dataCadastro = new Timestamp(System.currentTimeMillis());
     }
     
     //getters e setters 

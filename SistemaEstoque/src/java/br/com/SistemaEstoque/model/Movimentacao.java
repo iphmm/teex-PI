@@ -1,6 +1,6 @@
 package br.com.SistemaEstoque.model;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 /**
  *
@@ -17,6 +17,10 @@ public class Movimentacao {
     private Timestamp dataMovimentacao;
     
     //Construtor
+    public Movimentacao(){
+        
+    }
+    
     public Movimentacao(int idMovimentacao, int idProduto, int idTipo,
                         int idUsuario, int quantidade, double precoUnitario,
                         String observacao, Timestamp dataMovimentacao){
@@ -27,7 +31,7 @@ public class Movimentacao {
         this.quantidade = quantidade;
         this.precoUnitario = precoUnitario;
         this.observacao = observacao;
-        this.dataMovimentacao = dataMovimentacao;
+        this.dataMovimentacao = new java.sql.Timestamp(System.currentTimeMillis());
     }
     
     //getters e setters

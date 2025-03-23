@@ -1,21 +1,19 @@
 package br.com.SistemaEstoque.dao;
-
 import br.com.SistemaEstoque.factory.Factory;
-import java.sql.Connection;
-import br.com.SistemaEstoque.model.Categoria;
+import br.com.SistemaEstoque.model.Fornecedor;
 import java.sql.PreparedStatement;
+import java.sql.Connection;
 /**
  *
  * @author paulo
  */
-public class CategoriaDAO {
-    public void save(Categoria categoria){
-        String sql = "INSERT INTO categoria (nome, descricao) " +
-                     "VALUES (?, ?)";
-        
-    Connection conexao = null;
-    PreparedStatement pstm = null;
-    try{
+public class FornecedorDAO {
+    public void save(Fornecedor fornecedor){
+        String sql = "INSERT INTO fornecedor (nome, cnpj, telefone, email) " +
+                     "VALUES (?, ?, ?, ?)";
+        Connection conexao = null;
+        PreparedStatement pstm = null;
+        try{
             // Cria a conexão com o banco
             conexao = Factory.getConnection();
             
@@ -26,16 +24,18 @@ public class CategoriaDAO {
             pstm = conexao.prepareStatement(sql);
             
             // Adiciona os valores esperados pela Query
-            pstm.setString(1, categoria.getNome());
-            pstm.setString(2, categoria.getDescricao());
+            pstm.setString(1, fornecedor.getNome());
+            pstm.setString(2, fornecedor.getCnpj());
+            pstm.setString(3, fornecedor.getTelefone());
+            pstm.setString(4, fornecedor.getEmail());
             
              // Executar a query
             int rowsAffected = pstm.executeUpdate(); // Execute update para INSERT
 
-            // Se a inserção foi bem-sucedida, faz o commit
+            // Se a inserção funcionou, faz o commit
             if (rowsAffected > 0) {
                 conexao.commit();
-                System.out.println("Categoria inserida com sucesso!");
+                System.out.println("Fornecedor homologado com sucesso!");
             } else {
                 System.out.println("Nenhum dado foi inserido.");
             }
@@ -63,8 +63,6 @@ public class CategoriaDAO {
                 e.printStackTrace();
             }
         }
-    
+        
     }
-    
-    
 }
