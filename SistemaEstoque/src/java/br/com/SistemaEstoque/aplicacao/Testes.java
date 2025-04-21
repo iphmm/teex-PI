@@ -1,4 +1,12 @@
 package br.com.SistemaEstoque.aplicacao;
+
+
+/** import testes Movimentacao
+import br.com.SistemaEstoque.dao.MovimentacaoDAO;
+import br.com.SistemaEstoque.model.Movimentacao;
+*/
+
+
 /** import Teste Fornecedor
 import br.com.SistemaEstoque.dao.FornecedorDAO;
 import br.com.SistemaEstoque.model.Fornecedor;
@@ -10,10 +18,12 @@ import br.com.SistemaEstoque.model.Fornecedor;
     import br.com.SistemaEstoque.model.Usuario;
 */
 
+
 /** import do Teste produto
     import br.com.SistemaEstoque.dao.ProdutoDAO;
     import br.com.SistemaEstoque.model.Produto;
 */
+
 
 /** import do teste Categoria
     import br.com.SistemaEstoque.dao.CategoriaDAO;
@@ -25,7 +35,7 @@ import br.com.SistemaEstoque.model.Fornecedor;
  *
  * @author paulo
  */
-public class Main {
+public class Testes {
     public static void main(String[] args) {
         
         /** Teste Produto (Aprovado)
@@ -76,6 +86,19 @@ public class Main {
         fornecedor.setEmail("paulo.testes@gmail.com");
         
         fornecedorDAO.save(fornecedor);
+        */
+        
+        /** Teste Movimentacao (Aprovado) esse teste contempla a alteração da Id_tipo 
+        MovimentacaoDAO movimentacaoDAO = new MovimentacaoDAO();
+        Movimentacao movimentacao = new Movimentacao();
+        
+        movimentacao.setQuantidade(20);
+        movimentacao.setPrecoUnitario(200.00);
+        movimentacao.setObservacao("Nada a observar");
+        movimentacao.setIdProduto(3);
+        movimentacao.setIdUsuario(1);
+        
+        movimentacaoDAO.save(movimentacao);
         */
      }
 }

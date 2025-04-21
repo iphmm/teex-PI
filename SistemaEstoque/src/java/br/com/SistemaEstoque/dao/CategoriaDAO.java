@@ -67,4 +67,8 @@ public class CategoriaDAO {
     }
     
     
+public List<categoria> getCategoria(){
+    
+    
+}
 }
