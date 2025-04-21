@@ -28,6 +28,6 @@ Aqui vai ficar fixados os links dos Programas, Softwares e Drivers que serão ne
 
 [Apacher Tomcat (9.0.102)](https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.zip)
 
-## 6. XAMPP
+## 6. XAMPP.
 
 [XAMPP](https://www.apachefriends.org/pt_br/download_success.html)
